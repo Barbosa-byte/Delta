@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صروح الدلتا للمقاولات العامة | Suruuh Al-Delta</title>
+    <!-- Tailwind CSS CDN -->
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Fub4-JeNjbB4C9ZiNHNBF5J8rlJI8n_lejn0Jhl4q1x2TgE40leKy1Per-owUI2JOMdHoRgNAeIz27qS6x99Fk79Y4Sp-lkuNIWKNrtv7seWx48C7UWc1rr72Z3BkkZlLLmNbQde9fC77nc0SgfykEu91XJiVB3JCAEMX7mtG3sEmh_LS85jSuWVLLbTU3DFCMuT4Ga8eoIncXavnJtU9gKXmIWEvRSeN8e81Dsp2LHyO2yqJwwOung2fu_Q6RJPfckvM8Q5Nch0uIhPr7ieE-Y7DtTqaLqq4BmIM8IWtaZ1gjyxVXJh0qbkh3IlcDUwTeiOL-Srsi1_7I0vW-Spbg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jb250cmlidXRpb24udXNlcmNvbnRlbnQuZ29vZ2xlLmNvbS9kb3dubG9hZD9jPUNneGlZWEprWDNOMGIzSmhaMlVTVUJJTmNtVnpjRzl1YzJWZlpHRjBZUm9fQ2pCaU9EUmxaR1E1WTJKbU5XVmlNMlE0TURBd05qVTRPR0l6TVRnellqSTFNVEF3TkRFME5XUXpNRFl4WXpBMU5tRVNDeElIRUpfcTFaZl9HUmdCJmZpbGVuYW1lPWluZGV4Lmh0bWwmb3BpPTEwMzEzNTA1MCZhdXRodXNlcj01"/><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-family-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts: Tajawal -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0f2038',
+                            900: '#0a1628',
+                            950: '#050c17',
+                        },
+                        amber: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0a1628;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(15, 32, 56, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card-hover:hover {
+            transform: translateY(-8px);
+            border-color: rgba(245, 158, 11, 0.4);
+            box-shadow: 0 12px 30px -10px rgba(245, 158, 11, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-hero {
+            background: radial-gradient(circle at 50% 20%, rgba(245, 158, 11, 0.15) 0%, rgba(10, 22, 40, 0.95) 70%),
+                        linear-gradient(180deg, #0a1628 0%, #050c17 100%);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a1628;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f59e0b;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-200 selection:bg-amber-500 selection:text-navy-950">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-card border-b border-white/5" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center shadow-lg shadow-amber-500/20 text-navy-950 font-black text-2xl tracking-tighter">
+                        <i class="fa-solid fa-building-user"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold block text-white tracking-wide">صُروح الدلتا</span>
+                        <span class="text-xs text-amber-400 font-medium tracking-widest block uppercase">Suruuh Al-Delta</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 space-x-reverse">
+                    <a href="#hero" class="text-sm font-semibold hover:text-amber-400 transition-colors">الرئيسية</a>
+                    <a href="#about" class="text-sm font-semibold hover:text-amber-400 transition-colors">عن الشركة</a>
+                    <a href="#vision" class="text-sm font-semibold hover:text-amber-400 transition-colors">الرؤية والرسالة</a>
+                    <a href="#services" class="text-sm font-semibold hover:text-amber-400 transition-colors">خدماتنا</a>
+                    <a href="#partners" class="text-sm font-semibold hover:text-amber-400 transition-colors">شركاء النجاح</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-navy-950 font-bold text-sm transition-all shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40">تواصل معنا</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div class="hidden md:hidden glass-card border-t border-white/10 px-4 pt-2 pb-6 space-y-3" id="mobile-menu">
+            <a href="#hero" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-white/5 hover:text-amber-400">الرئيسية</a>
+            <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-white/5 hover:text-amber-400">عن الشركة</a>
+            <a href="#vision" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-white/5 hover:text-amber-400">الرؤية والرسالة</a>
+            <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-white/5 hover:text-amber-400">خدماتنا</a>
+            <a href="#partners" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-white/5 hover:text-amber-400">شركاء النجاح</a>
+            <a href="#contact" class="block text-center px-4 py-2.5 rounded-lg bg-amber-500 text-navy-950 font-bold">تواصل معنا</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen pt-32 pb-20 flex items-center justify-center bg-gradient-hero overflow-hidden">
+        <!-- Abstract Background Shapes -->
+        <div class="absolute top-1/4 right-10 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 left-10 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div data-aos="fade-down" class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-amber-500/30 text-amber-400 text-sm font-medium mb-6">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>جودة يوثق بها • خبرة يُعتمد عليها</span>
+            </div>
+
+            <h1 data-aos="fade-up" data-aos-delay="100" class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-tight mb-6">
+                صُروح الدلتا للمقاولات العامة
+                <span class="block text-gradient mt-2 text-3xl sm:text-5xl lg:text-6xl font-extrabold">نبني آفاق المستقبل</span>
+            </h1>
+
+            <p data-aos="fade-up" data-aos-delay="200" class="max-w-3xl mx-auto text-lg sm:text-xl text-gray-300 leading-relaxed mb-10 font-light">
+                نقدم أحدث الحلول والابتكارات الهندسية في مجال المقاولات العامة، العزل المائي والحراري، وأعمال التشطيبات وفق أعلى معايير الجودة والاستدامة في المملكة العربية السعودية.
+            </p>
+
+            <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-navy-950 font-bold text-lg transition-all shadow-xl shadow-amber-500/25 hover:scale-105">
+                    استكشف خدماتنا <i class="fa-solid fa-arrow-left mr-2"></i>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card hover:bg-white/10 text-white font-bold text-lg transition-all border border-white/20 hover:scale-105">
+                    طلب استشارة مجانية
+                </a>
+            </div>
+
+            <!-- Stats/Pillars Banner -->
+            <div data-aos="fade-up" data-aos-delay="400" class="grid grid-cols-2 md:grid-cols-5 gap-4 mt-20 pt-10 border-t border-white/10">
+                <div class="p-4 rounded-xl glass-card">
+                    <i class="fa-solid fa-award text-2xl text-amber-400 mb-2"></i>
+                    <div class="text-sm font-bold text-white">جودة يوثق بها</div>
+                    <div class="text-xs text-gray-400">Quality You Can Trust</div>
+                </div>
+                <div class="p-4 rounded-xl glass-card">
+                    <i class="fa-solid fa-city text-2xl text-amber-400 mb-2"></i>
+                    <div class="text-sm font-bold text-white">بناء مستقبل أفضل</div>
+                    <div class="text-xs text-gray-400">Building A Better Future</div>
+                </div>
+                <div class="p-4 rounded-xl glass-card">
+                    <div class="text-2xl font-black text-amber-400">1425 هـ</div>
+                    <div class="text-sm font-bold text-white">خبرة عريقة</div>
+                    <div class="text-xs text-gray-400">Experience You Can Rely On</div>
+                </div>
+                <div class="p-4 rounded-xl glass-card">
+                    <i class="fa-solid fa-cubes-stacked text-2xl text-amber-400 mb-2"></i>
+                    <div class="text-sm font-bold text-white">حلول تدوم</div>
+                    <div class="text-xs text-gray-400">Solutions That Last</div>
+                </div>
+                <div class="p-4 rounded-xl glass-card col-span-2 md:col-span-1">
+                    <i class="fa-solid fa-handshake-angle text-2xl text-amber-400 mb-2"></i>
+                    <div class="text-sm font-bold text-white">التزام ينجز</div>
+                    <div class="text-xs text-gray-400">Commitment That Delivers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative bg-navy-900 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-bold mb-4 border border-amber-500/20">
+                        <span>عن المؤسسة</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6 leading-tight">
+                        نبني اليوم من أجل غدٍ أقوى
+                        <span class="block text-amber-400 text-2xl font-medium mt-1">Building Today for a Stronger Tomorrow</span>
+                    </h2>
+                    <div class="space-y-4 text-gray-300 leading-relaxed font-light">
+                        <p>
+                            تعد <strong class="text-white font-bold">مؤسسة صُروح الدلتا للمقاولات العامة</strong> من المؤسسات الرائدة في مجالات العقارات والمقاولات المعمارية ومواد البناء. حيث انطلقت بقوة كبيرة في بداية مسيرتها وتوسعت في المجال المعماري حتى أصبحت اسماً بارزاً في هذا القطاع.
+                        </p>
+                        <p>
+                            وقد حققت مكانة مرموقة بتقديم أحدث التصاميم المعمارية والإنشائية بهدف المساهمة في نهضة وتطور البلاد بأحدث الوحدات السكنية التي تناسب المجتمع والبيئة. ومن هذا المنطلق كان لزاماً علينا التطوير المستمر لتلبية تطلعات المواطن السعودي والعربي.
+                        </p>
+                        <p>
+                            ومن هنا جاءت فكرة تأسيس المؤسسة عام <strong class="text-amber-400 font-bold">1425 هـ</strong> لتضع قواعدها بكل جدارة، بفضل حرصها على تقديم أفضل الخدمات الحديثة وفق فلسفة متطورة في مجال المقاولات والتنمية المستقبلية.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl glass-card border-r-4 border-r-amber-500">
+                            <div class="text-amber-400 font-bold text-lg mb-1">كادر مدرب</div>
+                            <p class="text-xs text-gray-400">كوادر مؤهلة بدورات متخصصة بالتعاون مع الجهات المختصة بالمملكة.</p>
+                        </div>
+                        <div class="p-4 rounded-xl glass-card border-r-4 border-r-amber-500">
+                            <div class="text-amber-400 font-bold text-lg mb-1">إدارة فعالة</div>
+                            <p class="text-xs text-gray-400">تلبية احتياجات المواطنين والعملاء وتنمية الاستثمارات المستقبلية.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" class="relative">
+                    <div class="relative rounded-2xl overflow-hidden glass-card p-8 border border-white/10 shadow-2xl">
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4 border-b border-white/10 pb-4">
+                                <div class="w-14 h-14 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-2xl font-bold">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-white">تغطي فروعنا المملكة</h3>
+                                    <p class="text-sm text-gray-400">أبها • الرياض - المملكة العربية السعودية</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-4 border-b border-white/10 pb-4">
+                                <div class="w-14 h-14 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-2xl font-bold">
+                                    <i class="fa-solid fa-[#fa-calendar]"></i>
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-white">تاريخ التأسيس</h3>
+                                    <p class="text-sm text-gray-400">منذ عام 1425 هـ (خبرة ممتدة لعقود)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-2xl font-bold">
+                                    <i class="fa-solid fa-users-gear"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-white">فلسفة العمل</h3>
+                                    <p class="text-sm text-gray-400">شراكة حقيقية وتطوير مستمر يلبي طموحات عملائنا</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section id="vision" class="py-24 relative bg-navy-950 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-amber-400 font-bold text-sm tracking-widest uppercase">عملاؤنا.. أولوية قصوى</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">رؤيتنا ورسالتنا</h2>
+                <p class="text-gray-400 mt-3">نلتزم بتقديم أفضل الخدمات المهنيه والحلول المبتكرة بأعلى معايير الجودة</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Vision Card -->
+                <div data-aos="fade-up" data-aos-delay="100" class="glass-card p-8 rounded-2xl glass-card-hover relative overflow-hidden">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-navy-950 text-2xl font-bold mb-6 shadow-lg shadow-amber-500/20">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">رؤيتنا (Our Vision)</h3>
+                    <p class="text-gray-300 leading-relaxed font-light mb-6">
+                        أن نصبح المصدر الاستراتيجي الأكثر قيمة لأعمالنا من خلال تقديم جودة استثنائية وتحقيق الريادة في الصناعة لضمان رضا العملاء وتجاوز توقعاتهم. نلتزم بتقديم خدمات مهنية وحلول مبتكرة وقيمة متميزة مع التحسين المستمر لأدائنا.
+                    </p>
+                    <div class="inline-flex items-center gap-2 text-amber-400 text-sm font-semibold">
+                        <span>الريادة والجودة الاستثنائية</span>
+                        <i class="fa-solid fa-check-circle"></i>
+                    </div>
+                </div>
+
+                <!-- Mission Card -->
+                <div data-aos="fade-up" data-aos-delay="200" class="glass-card p-8 rounded-2xl glass-card-hover relative overflow-hidden">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-navy-950 text-2xl font-bold mb-6 shadow-lg shadow-amber-500/20">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">رسالتنا (Our Mission)</h3>
+                    <p class="text-gray-300 leading-relaxed font-light mb-6">
+                        أن نكون الشركة الأفضل في المملكة العربية السعودية في أعمال العزل المائي والحراري وأعمال التشطيبات. فريقنا الاحترافي جاهز دائماً للاستجابة لأي طلب أو استفسار، مع بناء شبكة متميزة من الشراكات الوثيقة مع عملائنا.
+                    </p>
+                    <div class="inline-flex items-center gap-2 text-amber-400 text-sm font-semibold">
+                        <span>المرونة والفاعلية والشراكة المستدامة</span>
+                        <i class="fa-solid fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative bg-navy-900 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-amber-400 font-bold text-sm tracking-widest uppercase">حلول متكاملة</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">خدماتنا المتخصصة</h2>
+                <p class="text-gray-400 mt-3">نقدم مجموعة واسعة من الخدمات الهندسية والإنشائية والتكميلية وفق أعلى وأحدث المواصفات العالمية</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service Item 1 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="glass-card p-6 rounded-2xl glass-card-hover border border-white/5">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-droplet-slash"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">العزل المائي والحراري</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">أحدث تقنيات العزل المائي والحراري للأسطح والخزانات والمباني بحرفية عالية تضمن الحماية المستدامة.</p>
+                </div>
+
+                <!-- Service Item 2 -->
+                <div data-aos="fade-up" data-aos-delay="150" class="glass-card p-6 rounded-2xl glass-card-hover border border-white/5">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-paint-roller"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">جميع أعمال التشطيبات</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">تنفيذ كافة أعمال التشطيبات الداخلية والخارجية بجودة عالية ودقة متناهية تناسب جميع الأذواق.</p>
+                </div>
+
+                <!-- Service Item 3 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="glass-card p-6 rounded-2xl glass-card-hover border border-white/5">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">أعمال الإنشاءات بكافة أنواعها</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">إقامة وتشييد المباني السكنية والتجارية والمرافق بكفاءة هندسية عالية والتزام بالمواعيد.</p>
+                </div>
+
+                <!-- Service Item 4 -->
+                <div data-aos="fade-up" data-aos-delay="250" class="glass-card p-6 rounded-2xl glass-card-hover border border-white/5">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-border-all"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">حدران جيبسوم بورد معزولة</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">تركيب قواطع وجدران الجيبسوم بورد المعزولة صوتياً وحرارياً بأشكال عصرية وأنيقة.</p>
+                </div>
+
+                <!-- Service Item 5 -->
+                <div data-aos="fade-up" data-aos-delay="300" class="glass-card p-6 rounded-2xl glass-card-hover border border-white/5">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">إيبوكسي مواقف ومستودعات</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">طلاءات أرضيات الإيبوكسي المقاومة للاحتكاك والمواد الكيميائية لمواقف السيارات والمستودعات.</p>
+                </div>
+
+                <!-- Service Item 6 -->
+                <div data-aos="fade-up" data-aos-delay="350" class="glass-card p-6 rounded-2xl glass-card-hover border border-white/5">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-road"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">أعمال الأسفلت وتخطيط المواقف</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">سفلتة الطرق والساحات وتخطيط وتنظيم مواقف السيارات بالدهانات المرورية المعمدة.</p>
+                </div>
+
+                <!-- Service Item 7 -->
+                <div data-aos="fade-up" data-aos-delay="400" class="glass-card p-6 rounded-2xl glass-card-hover border border-white/5">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">معالجة الخرسانة وحقن التسربات</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">حقن خرسانات المباني لمعالجة وتسريب المياه وترميم التصدعات والتشققات الخرسانية.</p>
+                </div>
+
+                <!-- Service Item 8 -->
+                <div data-aos="fade-up" data-aos-delay="450" class="glass-card p-6 rounded-2xl glass-card-hover border border-white/5">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">الأعمال الميكانيكية والأمن والسلامة</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">تركيب وصيانة أنظمة الأمن والسلامة والشبكات الميكانيكية ومكافحة الحريق.</p>
+                </div>
+
+                <!-- Service Item 9 -->
+                <div data-aos="fade-up" data-aos-delay="500" class="glass-card p-6 rounded-2xl glass-card-hover border border-white/5">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-[#fa-bolt]"></i>
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">الأعمال الكهربائية والأرضيات الفينيل</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">تركيب الشبكات الكهربائية المتكاملة وتوريد وتركيب أرضيات الفينيل للمستشفيات والمكاتب.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-24 relative bg-navy-950 border-t border-white/5 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-amber-400 font-bold text-sm tracking-widest uppercase">علامات تجارية نعتز بها</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">شركاء النجاح</h2>
+                <p class="text-gray-400 mt-3">نتعاون مع كبرى الشركات العالمية والمحلية المصنعة لأفضل المواد والكيماويات الإنشائية</p>
+            </div>
+
+            <!-- Partners Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6" data-aos="fade-up">
+                <div class="glass-card p-6 rounded-xl flex items-center justify-center hover:border-amber-500/40 transition-all group">
+                    <div class="text-center">
+                        <span class="text-xl font-black text-white group-hover:text-amber-400 transition-colors">DWI</span>
+                        <p class="text-xs text-gray-400 mt-1">DERMABIT WATERPROOFING</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex items-center justify-center hover:border-amber-500/40 transition-all group">
+                    <div class="text-center">
+                        <span class="text-xl font-black text-white group-hover:text-amber-400 transition-colors">CMCI</span>
+                        <p class="text-xs text-gray-400 mt-1">Construction Material Chemical</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex items-center justify-center hover:border-amber-500/40 transition-all group">
+                    <div class="text-center">
+                        <span class="text-xl font-black text-white group-hover:text-amber-400 transition-colors">MAPEI</span>
+                        <p class="text-xs text-gray-400 mt-1">MAPEI GROUP</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex items-center justify-center hover:border-amber-500/40 transition-all group">
+                    <div class="text-center">
+                        <span class="text-xl font-black text-white group-hover:text-amber-400 transition-colors">EL SEIF</span>
+                        <p class="text-xs text-gray-400 mt-1">السيف للمقاولات</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex items-center justify-center hover:border-amber-500/40 transition-all group">
+                    <div class="text-center">
+                        <span class="text-xl font-black text-amber-400 group-hover:text-white transition-colors">بيتومات</span>
+                        <p class="text-xs text-gray-400 mt-1">BITUMAT</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex items-center justify-center hover:border-amber-500/40 transition-all group">
+                    <div class="text-center">
+                        <span class="text-xl font-black text-red-500 group-hover:text-amber-400 transition-colors">Sika®</span>
+                        <p class="text-xs text-gray-400 mt-1">SIKA CHEMICALS</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex items-center justify-center hover:border-amber-500/40 transition-all group">
+                    <div class="text-center">
+                        <span class="text-xl font-black text-white group-hover:text-amber-400 transition-colors">weber</span>
+                        <p class="text-xs text-gray-400 mt-1">SAINT-GOBAIN</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex items-center justify-center hover:border-amber-500/40 transition-all group">
+                    <div class="text-center">
+                        <span class="text-xl font-black text-amber-400 group-hover:text-white transition-colors">Henkel</span>
+                        <p class="text-xs text-gray-400 mt-1">POLYBIT</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex items-center justify-center hover:border-amber-500/40 transition-all group">
+                    <div class="text-center">
+                        <span class="text-xl font-black text-blue-400 group-hover:text-amber-400 transition-colors">BASF</span>
+                        <p class="text-xs text-gray-400 mt-1">The Chemical Company</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex items-center justify-center hover:border-amber-500/40 transition-all group">
+                    <div class="text-center">
+                        <span class="text-xl font-black text-emerald-400 group-hover:text-amber-400 transition-colors">عوازل</span>
+                        <p class="text-xs text-gray-400 mt-1">AWAZEL</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex items-center justify-center hover:border-amber-500/40 transition-all group">
+                    <div class="text-center">
+                        <span class="text-xl font-black text-red-400 group-hover:text-amber-400 transition-colors">FOSROC</span>
+                        <p class="text-xs text-gray-400 mt-1">FOSROC CHEMICALS</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex items-center justify-center hover:border-amber-500/40 transition-all group">
+                    <div class="text-center">
+                        <span class="text-xl font-black text-orange-400 group-hover:text-amber-400 transition-colors">DCP</span>
+                        <p class="text-xs text-gray-400 mt-1">Don Construction Products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative bg-navy-900 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div data-aos="fade-right">
+                    <span class="text-amber-400 font-bold text-sm tracking-widest uppercase">يسعدنا تواصلك معنا</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-6">تواصل معنا اليوم</h2>
+                    <p class="text-gray-300 leading-relaxed font-light mb-8">
+                        فريقنا من المهندسين والمختصين جاهز دائماً للرد على جميع استفساراتكم الفنية والقتنية، وتقديم الاستشارات وعروض الأسعار لمشاريعكم.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-400">الهاتف / الواتساب</div>
+                                <a href="tel:0595110679" dir="ltr" class="text-lg font-bold text-white hover:text-amber-400 transition-colors">0595110679</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-400">البريد الإلكتروني</div>
+                                <a href="mailto:altaawon.ex@gmail.com" class="text-lg font-bold text-white hover:text-amber-400 transition-colors">altaawon.ex@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-400">العنوان والمقر الرئيسي</div>
+                                <div class="text-lg font-bold text-white">أبها / الرياض - المملكة العربية السعودية</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div data-aos="fade-left" class="glass-card p-8 rounded-2xl border border-white/10">
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">الاسم الكامل</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-white/10 text-white focus:outline-none focus:border-amber-500 transition-colors" placeholder="أدخل اسمك الكريم">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">رقم الجوال</label>
+                            <input type="tel" required class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-white/10 text-white focus:outline-none focus:border-amber-500 transition-colors" placeholder="05xxxxxxxx">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">نوع الخدمة المطلوبة</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-white/10 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                                <option>العزل المائي والحراري</option>
+                                <option>أعمال التشطيبات والديكور</option>
+                                <option>أعمال الإنشاءات العامة</option>
+                                <option>جدران جيبسوم بورد معزولة</option>
+                                <option>إيبوكسي مواقف ومستودعات</option>
+                                <option>أعمال أسفلت ومعالجة خرسانات</option>
+                                <option>خدمة أخرى</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">تفاصيل الرسالة</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-white/10 text-white focus:outline-none focus:border-amber-500 transition-colors" placeholder="أكتب تفاصيل مشروعك أو استفسارك هنا..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-navy-950 font-bold text-lg transition-all shadow-lg shadow-amber-500/25">
+                            إرسال الطلب الآن <i class="fa-solid fa-paper-plane mr-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div class="w-10 h-10 rounded-lg bg-amber-500 flex items-center justify-center text-navy-950 font-bold text-xl">
+                        <i class="fa-solid fa-building-user"></i>
+                    </div>
+                    <div>
+                        <span class="text-lg font-extrabold text-white">صُروح الدلتا للمقاولات العامة</span>
+                        <p class="text-xs text-gray-400">Suruuh Al-Delta General Contracting</p>
+                    </div>
+                </div>
+
+                <div class="text-sm text-gray-400 text-center">
+                    جميع الحقوق محفوظة © <span id="year"></span> صروح الدلتا للمقاولات العامة
+                </div>
+
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <a href="#" class="w-9 h-9 rounded-full glass-card flex items-center justify-center text-gray-300 hover:text-amber-400 hover:border-amber-400 transition-colors">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full glass-card flex items-center justify-center text-gray-300 hover:text-amber-400 hover:border-amber-400 transition-colors">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full glass-card flex items-center justify-center text-gray-300 hover:text-amber-400 hover:border-amber-400 transition-colors">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Initializations -->
+    <script>
+        // Set dynamic current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form submission alert (demo)
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('شكراً لتواصلك مع صروح الدلتا! تم استلام طلبك بنجاح وسنقوم بالرد عليك في أقرب وقت ممكن.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
